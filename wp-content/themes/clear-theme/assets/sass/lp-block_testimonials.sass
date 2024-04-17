@@ -1,0 +1,52 @@
+$light_green: #149374
+$dark_green: #0A604C
+.testimonial
+  padding: 80px 0 120px
+  background-color: #F0F6F5
+  @media screen and (max-width: 768px)
+    padding: 40px 0 30px
+  &__title
+    display: flex
+    justify-content: center
+    margin-bottom: 80px
+  &__row
+    display: flex
+    flex-wrap: wrap
+    gap: 24px
+    @media screen and (max-width: 1280px)
+      justify-content: center
+  &__item
+    display: flex
+    flex-direction: column
+    padding: 37px 26px 30px 37px
+    background-color: rgba(255, 255, 255, 1)
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.15)
+    border-radius: 15px
+    width: 397px
+    min-height: 344px
+    height: 100%
+    @media screen and (max-width: 992px)
+      width: 335px
+      min-height: 351px
+      padding: 30px
+    p:last-child
+      margin-bottom: 0
+    &--stars
+      display: flex
+      gap: 8px
+      margin-bottom: 30px
+    &--name
+      display: inline-flex
+      flex-direction: column
+      margin-top: auto
+      &-title
+        font-style: normal
+        font-weight: 600
+        font-size: 17px
+        line-height: 24px
+        color: $light_green
+      &-position
+        font-weight: 400
+        font-size: 14px
+        line-height: 24px
+        color: #1D1D1B

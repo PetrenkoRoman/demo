@@ -1,0 +1,146 @@
+@font-face
+  font-family: Cinzel
+  src: url('../fonts/Cinzel/Cinzel-VariableFont_wght.ttf')
+@font-face
+  font-family: Source Sans Pro
+  src: url('../fonts/Source-Sans-Pro/SourceSans3-VariableFont_wght.ttf')
+
+$light_green: #149374
+$dark_green: #0A604C
+
+*, *:before, *:after
+  box-sizing: border-box
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  text-size-adjust: none
+html
+  box-sizing: border-box
+body
+  font-size: 17px
+  color: #000
+  font-family: Source Sans Pro, sans-serif
+  letter-spacing: normal
+  font-weight: 400
+  line-height: 24px
+h2
+  font-size: 48px
+  color: $dark_green
+  font-family: Cinzel, sans-serif
+  font-weight: 700
+  line-height: 64.7px
+  @media screen and (max-width: 992px)
+    font-size: 40px
+    line-height: 53.92px
+h3
+  font-size: 32px
+  color: $dark_green
+  font-family: Source Sans Pro, sans-serif
+  font-weight: 400
+  line-height: 40.22px
+p
+  font-size: 17px
+  color: #000
+  font-family: Source Sans Pro, sans-serif
+  letter-spacing: normal
+  font-weight: 400
+  line-height: 24px
+footer, header, nav, section, main
+  display: block
+ol, ul
+  list-style: none
+blockquote, q
+  quotes: none
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+table
+  border-collapse: collapse
+  border-spacing: 0
+input
+  -webkit-appearance: none
+  border-radius: 0
+p
+  margin: 0 0 .5em
+  line-height: 24px
+img
+  width: 100%
+  height: 100%
+.container
+  width: 100%
+  margin-left: auto
+  margin-right: auto
+  padding-left: 15px
+  padding-right: 15px
+  transition: all .3s ease-out
+  @media (min-width: 576px)
+    max-width: 540px
+  @media (min-width: 768px)
+    max-width: 720px
+  @media (min-width: 992px)
+    max-width: 960px
+  @media (min-width: 1200px)
+    max-width: 1140px
+  @media (min-width: 1280px)
+    max-width: 1270px
+  section .container
+  position: relative
+  z-index: 1
+.btn
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: center
+  align-items: center
+  text-decoration: none
+  text-align: center
+  line-height: 1
+  color: #fff
+  transition: 0.3s ease-in-out
+  &__green
+    font-family: Cinzel, sans-serif
+    font-weight: 700
+    font-size: 20px
+    line-height: 26.96px
+    max-width: 280px
+    width: 100%
+    height: 62px
+    background: $light_green
+    border-radius: 100px
+    &:hover
+      background: $dark_green
+.btn__wrapper
+  display: flex
+  justify-content: center
+  margin-top: 60px
+  @media screen and (max-width: 992px)
+    margin-top: 30px
+
+.mejs-container
+  width: 100% !important
+  height: 100% !important
+  padding-top: 80%
+.mejs-overlay, .mejs-poster
+  width: 100% !important
+  height: 100% !important
+.mejs-mediaelement
+  video
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100% !important
+    height: 100% !important
+    object-fit: cover
+.wp-video
+  height: 100% !important
+.mejs-controls
+  display: none !important
+  visibility: hidden !important
